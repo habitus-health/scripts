@@ -14,9 +14,9 @@ Say DarkGray "|- 1. Point your local repositories to bitbucket.org"
 Say DarkGray "|- 2. Generate a public and a private rsa key (ssh key)"
 Say DarkGray "|- 3. Import the public key to your account"
 Say DarkGray "|- 4. Test if the migration has succeeded" 3000
-Say Gray "|- Are your repositories located at this current directory ($(Get-Location))?"
 Say DarkGray "|- I'll generate the ssh-key for you but I'll need your help to import it to bitbucket account." 1000
-Say DarkGray "|- press enter to continue ..."
+Say Gray "|- Are your repositories located at this current directory ($(Get-Location))?"
+Say Gray "|- press enter to continue ..."
 Read-Host 
 
 Remove-Item $HOME/.ssh -Force -Recurse 
