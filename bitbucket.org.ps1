@@ -31,7 +31,7 @@ $Repositories = Get-Repositories
 $Repositories | Foreach-Object {
   if (Test-Path $(Join-Path $_ ".git")) {
     $Origin = $(git -C $_ remote get-url origin 2> $null) 
-    if ($Origin -like "*github*habitus*health*") {
+    if ($Origin -like "*github*habitus*health*" -and $origin -notlike "mobile-app") {
       $NewOrigin = $Origin -replace ".*github.com.*?habitus-health/", "git@bitbucket.org:habitus-health/"
       git -C $_ remote set-url origin $NewOrigin
       Say DarkGray " |- $NewOrigin"
