@@ -8,7 +8,7 @@ Function Get-Repositories {
   }
 }
 
-Say Cyan "This is a simple wizzard for migrating repositories to bitbucket.org" 3000
+Say Cyan "bitbucket.org migration script" 3000
 Say Yellow "There are a few steps we need to do in order to get this done:"
 Say DarkGray "|- 1. Point your local repositories to bitbucket.org"
 Say DarkGray "|- 2. Generate a public and a private rsa key (ssh key)"
