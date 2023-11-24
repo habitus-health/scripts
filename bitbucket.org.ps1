@@ -53,7 +53,7 @@ $Repositories | Foreach-Object {
 
   Say Yellow "`nNow, we'll need to import the ssh-key to your bitbucket.org account."
   Say DarkGray "|- 1. I am going to opening your web browser at bitbucket.org and you may have to sign in. If so, use the [Microsoft] button"
-  Say DarkGray "|- 2. When the browser opens on the page, use the [Add key] button to create a new ssh-key"
+  Say DarkGray "|- 2. When the browser opens on the page, click on the [Add key] button to create a new ssh-key"
   Say DarkGray "|- 3. Then you can paste the ssh public key that has already been copied to you clipboard"
   Say Gray "|- Are you ready?"
   Say Gray "|- press enter ..."
